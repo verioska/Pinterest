@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Cards from './Cards/Cards';
-import Modal from './Modal'
-import './Cards/Cards.css'
+import Modal from './Modal/Modal';
+import Navbar from './Navbar/Navbar';
+import './Cards/Cards.css';
+import InfiniteScroll from 'react-infinite-scroll-component'
+
 
 
 class App extends Component {
@@ -11,18 +14,19 @@ class App extends Component {
       this.state={
       img:"",
       modal:false,
-    
+      img2:"",
   }
-  this.abrirmodal=this.abrirmodal.bind(this);
-  this.cerrarmodal=this.cerrarmodal.bind(this);
+  this.modalOpen=this.modalOpen.bind(this);
+  this.modalClose=this.modalClose.bind(this);
 }
-abrirmodal(i){
+modalOpen(i){
   this.setState({
     ...this.state,
     modal:i,
   })
 }
-cerrarmodal(){
+
+modalClose(){
   this.setState({
     ...this.state,
     modal:false,
@@ -42,24 +46,32 @@ cerrarmodal(){
 }
 
 show(){
-  const leer=this.state.img.map(element=>{
+  const travel=this.state.img.map(element=>{
     return ( 
-      
-      <Cards hacerClick={this.abrirmodal}
+      <Cards imgClick={this.modalOpen}
         url={element.urls.thumb}
-      />
+        name={element.user.name}/>
+        
       )
   })
-  return leer
+  return travel
 }
 
   render() {
     return (
-  
-      <div className="contenedr">
-      {this.state.modal && <Modal cerrarmodal={this.cerrarmodal} verimg={this.state.modal}/>}
+      <div>
+        <div>
+        <Navbar/>
+      </div>
+      <div className="contenedr"> 
+      {this.state.modal && <Modal modalClose={this.modalClose} 
+       viewImg={this.state.modal}/>}
         {this.state.img && this.show()}
       </div>
+    
+    
+    
+     </div>
       
     );
   }

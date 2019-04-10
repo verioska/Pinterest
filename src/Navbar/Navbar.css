@@ -1,0 +1,28 @@
+.fab.fa-pinterest{
+    color: rgb(219, 49, 49);
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 1.5rem;
+}
+.search{
+    margin-left: 1.5rem;
+    width: 50%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px; 
+    background-color: #eeecec;
+    margin-top: 10px;
+    border: #eeecec;
+    padding: 0 40px 0 52px;
+    
+}
+.menu{
+    margin-top: 1%;
+}
+
+.home,.next,.user,.fas.fa-bell,.fa-ellipsis-h,.fa-comment-dots{
+    color: #8e8e8e;
+    margin-left: 2rem;
+    font-size: 115%;
+}
+

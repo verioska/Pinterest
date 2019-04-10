@@ -4,7 +4,9 @@ import '../Cards/Cards.css'
 function Cards(props){
     return(
         <div className="card">
-            <img onClick={()=>props.hacerClick(props.url)} src={props.url}></img>
+            <img onClick={()=>props.imgClick(props.url)}
+            src={props.url}></img>
+            
         </div>
         )
 }
