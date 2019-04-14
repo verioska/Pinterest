@@ -3,8 +3,8 @@ import '../Cards/Cards.css'
 
 function Cards(props){
     return(
-        <div className="card">
-            <img onClick={()=>props.imgClick(props.url)}
+        <div >
+            <img className="img" onClick={()=>props.imgClick(props.url)}
             src={props.url}></img>
             
         </div>

@@ -6,7 +6,7 @@ import '../Navbar/Navbar.css'
 function Navbar(props){
     return(
         <div className="menu">
-            <navbar >
+            <navbar className="navbar" >
                 <url className="list">
                     <i class="fab fa-pinterest"></i>
                     <input className="search" placeholder="buscar"></input>
