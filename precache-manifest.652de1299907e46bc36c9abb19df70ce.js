@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e614b61dce542294b39f",
-    "url": "/Pinterest/static/css/main.97f9b2b2.chunk.css"
+    "revision": "20546d26498fafcaf69f",
+    "url": "/Pinterest/static/css/main.4cb4c138.chunk.css"
   },
   {
-    "revision": "e614b61dce542294b39f",
-    "url": "/Pinterest/static/js/main.d67f6654.chunk.js"
+    "revision": "20546d26498fafcaf69f",
+    "url": "/Pinterest/static/js/main.6806efe4.chunk.js"
   },
   {
     "revision": "dea190779213edba1912",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/Pinterest/static/js/2.be9d155b.chunk.js"
   },
   {
-    "revision": "f03c48d976f35a12024dfa8973fe8664",
+    "revision": "95de4a41e09e00a5fbe35e21628bc520",
     "url": "/Pinterest/index.html"
   }
 ];
